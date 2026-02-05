@@ -14,7 +14,7 @@ header h1{
 
 }
 nav{
-    font-display: bold;
+    font-weight: bold;
     background-color: #f3f3f3;
 
 }
@@ -28,7 +28,7 @@ dt{
     color:#003058;
 }
 .ut{
-    color:ba1c21;
+    color:#BA1C21;
     font-weight:bold;
 }
 footer{
