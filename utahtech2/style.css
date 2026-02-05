@@ -24,16 +24,16 @@ h2{
 
 }
 dt{
-    font-display:bold;
+    font-weight:bold;
     color:#003058;
 }
 .ut{
     color:ba1c21;
-    font-display:bold;
+    font-weight:bold;
 }
 footer{
     font-size:0.70rem;
-    font-display:italic;
+    font-style:italic;
     text-align:center;
 }
 #wrapper{
