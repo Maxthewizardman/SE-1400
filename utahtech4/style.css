@@ -87,13 +87,13 @@ main{
    background-repeat:no-repeat;
    background-position:center;
 }
-nav a:hover {
+nav a{
     text-decoration: none;
     color:#ffffff;
-    padding:1rem 0rem
-    display-block:
-    text-align:center:
-    background-color:#BA1C21;} 
+    padding:1rem 0rem;
+    text-align: center;
+}
+
         
 *{
     box-sizing: border-box;
@@ -127,4 +127,6 @@ main img{
 nav ul li{
     width:100%
 }
-
+nav a:hover{
+background-color:#BA1C21;
+}
