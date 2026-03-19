@@ -4,6 +4,7 @@ body {
     font-family:verdana, Arial, sans-serif;
     background-image: linear-gradient(to bottom,#eeeeee,#ffffff);
     background-attachment: fixed;
+    margin:0px;
 }
 header{
     background-color: #003058;
@@ -27,13 +28,10 @@ header a{
 nav{
     font-weight: bold;
     background-color: #424242;
-    position:sticky;
-    top:0;
-    margin:0px;
-    padding:0px;
-    display:flex;
-    flex-flow: row/nowrap;
-    list-style-type:none;
+    position: sticky;
+    top: 0;
+    grid-row: 2 / 3;
+    grid-column: 2 / 8;
 }
 h2{
     color: #424242;
@@ -89,15 +87,15 @@ main{
 }
 nav a{
     text-decoration: none;
-    color:#ffffff;
-    padding:1rem 0rem;
+    color: #fff;
+    padding: 1rem 0rem;
+    display: block;
     text-align: center;
 }
 
         
 *{
     box-sizing: border-box;
-    margin:0px;
 }
 header {
     grid-row:1/2;
@@ -129,4 +127,11 @@ nav ul li{
 }
 nav a:hover{
 background-color:#BA1C21;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
 }
