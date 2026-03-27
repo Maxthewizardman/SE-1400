@@ -65,7 +65,7 @@ footer{
     background-position:center;
 }
 h3{
-    color:#003058
+    color:#003058;
 }
 main{
     padding-left: 2rem;
@@ -123,7 +123,7 @@ main img{
     padding: 2rem;
 }
 nav ul li{
-    width:100%
+    width:100%;
 }
 nav a:hover{
 background-color:#BA1C21;
@@ -196,22 +196,24 @@ nav ul {
 }
  label {
     padding: 10px;
-    text-align: right;
+    text-align: left;
 }
- #mySubmit {
-    width: 10rem;
-    grid-column: 2 / 3;
+
+input, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    color: #666666;
+    background-color: #fafafa;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
 }
- #alumnihero{
-   background-image:url(alumnihero .jpg);
+
+#alumnihero{
+    background-image:url(alumnihero.jpg);
     height: 300px;
     background-size:cover;
     background-repeat: no-repeat;
-    background-position:center;
-}
-
- @media (min-width: 600px) {
-    #homehero, #studenthero, #facultyhero, #alumnihero {
-        background-size: cover;
-    }
+    background-position: center;
+    
 }
