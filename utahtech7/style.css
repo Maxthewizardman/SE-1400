@@ -217,3 +217,26 @@ input, textarea {
    background-position:center;
     
 }
+table{
+    margin:0 auto;
+    border:#424242 1px solid;
+    width:100%;
+    border-collapse:collapse;
+    
+}
+td, th{
+    padding:5px;
+    border:#424242 1px solid;
+}
+td{
+    text-align: center;
+
+}
+.text{
+    text-align: left;
+
+}
+tr:nth-of-type(even){
+    background-color:#f3f3f3;
+
+}
