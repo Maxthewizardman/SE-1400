@@ -127,6 +127,7 @@ nav ul li{
 }
 nav a:hover{
 background-color:#BA1C21;
+transition: background-color 0.5s ease-out;
 }
 nav ul {
     margin: 0;
@@ -145,37 +146,7 @@ nav ul {
     grid-row:2/3;
     grid-column:1/-1;
 }
- @media only screen and (max-width: 1100px){
-    #wrapper{grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);}
- }
- @media only screen and (max-width: 900px){
-    nav{
-        grid-row:2/3;
-        grid-column:1/5;
-        position:static; }
-        nav ul{flex-flow:column nowrap;}
-        #homehero, #studenthero, #facultyhero, #alumnihero{
-            grid-row:2/3;
-            grid-column:5/8;
-            height:auto;}
-        main img{
-            float:none;
-            width:100%;
-            height:auto;
-            padding-left:0px;
-            }
-    
- }
- @media only screen and (max-width: 600px){
-   header h1{background-image: none;
-            text-align: center;}
-            nav{grid-row:2/3;
-            grid-column:1/-1;
-        }
-        #homehero, #studenthero, #facultyhero, #alumnihero{display:none;}
-   
- }
- form{
+form{
     display:grid;
    grid-template-rows: auto;
    grid-template-columns:200px 1fr;
@@ -240,3 +211,45 @@ tr:nth-of-type(even){
     background-color:#f3f3f3;
 
 }
+video{
+    margin-left:2em;
+    float:right;
+    
+}
+ @media only screen and (max-width: 1100px){
+    #wrapper{grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);}
+ }
+ @media only screen and (max-width: 900px){
+    nav{
+        grid-row:2/3;
+        grid-column:1/5;
+        position:static; }
+        nav ul{flex-flow:column nowrap;}
+        #homehero, #studenthero, #facultyhero, #alumnihero{
+            grid-row:2/3;
+            grid-column:5/8;
+            height:auto;}
+        main img{
+            float:none;
+            width:100%;
+            height:auto;
+            padding-left:0px;
+        }
+            video{
+                float:none;
+                margin:0%;
+                width:100%;               
+                height:auto;
+            }
+    
+ }
+ @media only screen and (max-width: 600px){
+   header h1{background-image: none;
+            text-align: center;}
+            nav{grid-row:2/3;
+            grid-column:1/-1;
+        }
+        #homehero, #studenthero, #facultyhero, #alumnihero{display:none;}
+   
+ }
+ 
