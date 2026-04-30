@@ -3,23 +3,28 @@
   grid-auto-rows: minmax(0px, auto);
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
+img {
+    width:100%;
+    height:auto;
+}
 nav{
     grid-row:1/2;
     grid-column:2/-2;
-    background-color: brown;
+    background-color: darkred;
     height:50px;
 }
 header{
     grid-row:2/3;
     grid-column:2/-2;
-    background-color: green;
+    background-color: navy;
     height:100px;
     margin: 20px;
+    text-decoration-color: black;
+    color:black;
 }
 main{
     grid-row:3/4;
     grid-column:2/-2;
-    
     margin:0 20px
 }
 .col-2{
@@ -29,7 +34,9 @@ main{
 .col{
     width:50%;
     margin:20px;
-    background-color:purple;
+    background-color:navy;
+    text-emphasis-color: white;
+    color:grey;
     height: 500px;
     
 }
@@ -40,6 +47,51 @@ footer{
     height:50px;
     margin-top:20px;
 }
+form{
+    display:grid;
+   grid-template-rows: auto;
+   grid-template-columns:150px 1fr;
+   gap:0.75rem;
+   width:100%;  
+ }
+ input, textarea{
+    font-size:1rem;
+    padding:10px;
+    color:#666666;
+    background-color:#fafafa;
+    border:none;
+
+ }
+ input:focus, textarea:focus {
+    outline: none;
+    background-color: #f0f0f0;
+}
+ label {
+    padding: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    color: #666666;
+    background-color: #fafafa;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.container{
+    grid-row:3/4;
+    grid-column:2/-2;
+    margin:0 20px
+ }
+ #biggie{ background-image:url(biggie.jpeg); 
+   height: 100px;
+   background-size:cover;
+   background-repeat:no-repeat;
+   background-position:center;
+}
+
 @media only screen and (max-width: 1100px){
     #wrapper{grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);}
  }
@@ -71,14 +123,4 @@ footer{
         }
    
  }
- .container{
-    grid-row:3/4;
-    grid-column:2/-2;
-    margin:0 20px
- }
- #biggie{ background-image:url(biggie.jpeg); 
-   height: 100px;
-   background-size:cover;
-   background-repeat:no-repeat;
-   background-position:center;
-}
+ 
